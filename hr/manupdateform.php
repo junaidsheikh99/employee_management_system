@@ -10,7 +10,7 @@
     <head>
          <meta charset="UTF-8">
          <title>Employee Management Sysetem</title>
-      <link href="../css/upform.css" rel="stylesheet" type="text/css"/>
+      <link href="hr/css/upform.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div class="upfm">
@@ -116,8 +116,8 @@
 </div>
 
 
-<script src="../js/experi.js"></script>
-<script src="../js/counauto.js"></script>
+<script src="hr/js/experi.js"></script>
+<script src="hr/js/counauto.js"></script>
 
 </body>
 
