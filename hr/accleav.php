@@ -22,7 +22,7 @@ if(isset($_POST['submit'])){
     <head>
          <meta charset="UTF-8">
          <title>Employee Management Sysetem</title>
-         <link href="../css/accleave.css" rel="stylesheet" type="text/css"/>
+         <link href="hr/css/accleave.css" rel="stylesheet" type="text/css"/>
         </head>
 <body>
   <div class="container">
