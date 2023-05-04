@@ -1,0 +1,68 @@
+
+body{
+    
+  background-color:rgb(235, 231, 231);
+  
+}
+
+
+.navbar::before{
+    content: "";
+    background-color:black;
+    position:absolute;
+        
+        padding: 10px;
+        height: 10%;
+        width: 10%;
+        z-index: -1;
+        opacity: 0.4;
+        padding-left: 89%; 
+        border-radius: 10px;
+        /* box-shadow: #333;  */
+}
+.navbar ul{
+  display: flex;
+  
+}
+.navbar ul li{
+list-style: none;
+font-size: 1rem;
+
+}
+.navbar ul li a{
+/* color: #000408;*/
+display: block;
+padding: 9px 5px;
+border-radius: 10px;
+text-decoration: none;
+background-color:white ;
+color: #000408;
+border-spacing: 20px;
+margin-top: 25px;
+margin-right: 4px;
+}
+
+.navbar ul li a:hover{
+   
+  background-color: #6b08f5;
+   color: white;
+}
+
+.button a{
+  background: linear-gradient(90deg, #673ab7 0%, #512da8);
+  /* other gradient we can use: #6a3093 0%, #a044ff); */
+    float:right;  
+    padding: 10px 20px;
+    font-size:20px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    color: beige;
+  } 
+
+  .button :hover{
+    background-color: aliceblue;
+    color: #100f0f;
+  }

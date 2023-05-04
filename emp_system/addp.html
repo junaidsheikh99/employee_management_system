@@ -1,0 +1,180 @@
+<!-- <?php
+session_start();
+if(isset($_SESSION['submit']))
+{
+    echo "";
+}
+else
+{
+    header('location:add_P.php');
+}
+?> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Projects</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .form{
+            margin: auto;
+            background: #000000c8;
+            max-width: 550px;
+            padding: 30px;
+            padding-top: 20px;
+            padding-left: 5px;
+            /*opacity: 80%;
+            box-shadow: 0 8px 32px 0 rgba(3, 25, 21, 0.674);
+            backdrop-filter:blur(10px);*/
+            border-radius: 10px;
+            border: 1px solid rgb(12,11,11);
+            margin-top: 50px; 
+        }
+         .form input{ 
+            padding:15px;
+            width: 250;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 15px;
+            border-style: groove;
+            background: rgba(33, 127, 137, 0.587);
+            color: #1616160e;
+            font-weight: bold;
+            font-family: sans-serif;
+            box-shadow: 0 4px 15px 0 rgba(165, 159, 159, 0.471);
+        }
+
+        .form input{
+            padding:15px;
+            width: 250;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 15px;
+            border-style: groove;
+            background: rgba(182, 244, 242, 0.246);
+            color: #050505ed;
+            font-weight: bold;
+            font-family: sans-serif;
+            box-shadow: 0 4px 15px 0 rgba(59, 57, 57, 0.117);
+        }
+        .form input :focus{
+            outline: invert;
+        }
+         form input:hover{
+            border: 2px solid;
+        } 
+       .form form{
+            display: flex;
+            padding: 100px;
+            flex-direction: column;
+        }
+
+        table{
+            margin: left 15px;
+            height: 100px;
+            margin-left: 100px;
+        }
+         table th {
+            background-color: aqua;
+            color: #00008b;
+         }
+        .td4{
+            background-color:#030344;
+            color:aqua;
+         }
+        .td1{
+            background-color:#030344;
+            color: aqua;
+         }
+         .td2{
+            background-color:#030344 ;
+            color: aqua;
+         }
+         .td3{
+            background-color: #030344;
+            color: aqua;
+         }
+    </style>
+</head>
+
+
+<body>
+    <div class="sidebar" align="left">
+        <ul>
+        <li><a href="index.php">Home</a></li>
+           <li><a href="create_team.php">Create Teams</a></li>
+           <li><a href="add_P.php">Add Projects</a></li>
+           <li><a href="asgnP.php">Assigned Projects</a></li>
+           <li><a href="#">Perfomance</a></li>
+        </ul>
+    </div>
+    </ul> 
+
+      <nav class="navbar">
+        <div class="title">  
+           <h1> Manager Dashboard</h1>
+        </div>
+        <div class="button">
+            <a href="Logout.php">LogOut</a>
+         </div>
+        </nav>
+
+    <form class="form">
+        <div>
+        <table border="1" align="center">
+            <th colspan="3" align="center"><h2>Add Projects </h2></th>
+
+            <tr>
+                <td class="td4"><b> Project Name</td>
+                <td><input type="text" name="Pname"placeholder="Project Name"></td>
+                
+            </tr>
+            <tr><td class="td1"><b>Project Description</td>
+                <td><textarea name="decpn" id="" cols="30" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td class="td2" align="center"><b>Date</td>
+               <td><input type="date"></td> 
+            </tr>
+            <tr>
+                <td class="td3" align="center"><b>Deadline</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center"><input type="submit" name="submit" value="Submit"></td>
+            </tr>
+        </table>
+        </div>
+    </form>
+</body>
+</html>
+
+<!-- <?php
+include("dbcon.php");
+if(isset($_POST['submit']))
+{
+    $P_name = $_POST["Pname"];
+    $P_desp = $_POST["decpn"];
+    $Date   =  $_POST["date"];
+    $deadline= $_POST["date"];
+
+    $qry = "INSERT INTO `add_project`(`Project_Name`, `Project_decp`, `Date`, `Deadline`) VALUES ('[$P_name]','[$P_desp]','[$Date ]','[$deadline]')";
+    $run = mysqli_query($con,$qry);
+    $row = mysqli_num_rows($run);
+   -->
+    
+ 
+   
+          
+}
+?>
+
+
+
+
