@@ -23,7 +23,7 @@ $salary= $_POST['salary'];
 $imagename =$_FILES['simg']['name'];
 $tempname =$_FILES['simg']['tmp_name'];
 
-move_uploaded_file($tempname,"../dataimg/$imagename");
+move_uploaded_file($tempname,"hr/dataimg/$imagename");
 $pass=$_POST['pass'];
 $qry="UPDATE `employee` SET fname='$fname',mname='$mname',lname='$lname',email='$email',mob='$phone',experience='$exp',expyr='$expyr',city='$city',dist='$dist',state='$ste',country='$mycon',dob='$bdy',gender='$gender',emp_id='$empid',dept='$dept',position='$pstn',sdate='$sdate',salary='$salary',image='$imagename',pass='$pass' WHERE emp_id=$empid";
 
