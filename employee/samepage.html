@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$(".menu-item").click(function() {
+				var page = $(this).attr("data-page");
+				$("#content").load(page);
+			});
+		});
+	</script>
+
+    <!-- css -->
+    <style>
+        .sidebar {
+	float: left;
+	width: 20%;
+	height: 100%;
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+}
+
+.sidebar ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.sidebar li {
+	padding: 10px;
+	cursor: pointer;
+}
+
+#content {
+	float: left;
+	width: 80%;
+	height: 100%;
+	padding: 20px;
+}
+
+    </style>
+</head>
+<body>
+	<div class="sidebar">
+		<ul>
+			<li class="menu-item" data-page="home.php">Home</li>
+			<li class="menu-item" data-page="about.php">About</li>
+			<li class="menu-item" data-page="services.php">Services</li>
+			<li class="menu-item" data-page="contact.php">Contact</li>
+		</ul>
+	</div>
+	<div id="content">
+		<p>Welcome to my website!</p>
+		<p>Please select a menu item to view more information.</p>
+	</div>
+</body>
+</html>

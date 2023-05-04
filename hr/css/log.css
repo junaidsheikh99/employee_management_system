@@ -1,0 +1,114 @@
+
+::placeholder{
+  color: #070101;
+}
+.glassmorphic-form {
+  margin: auto;
+  max-width: 550px;
+  padding: 20px;
+  padding-top: 50px;
+  background: #00000f;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.988);
+  border-radius: 20px;
+  border: 1px solid rgb(12, 11, 11);
+  
+}
+
+.glassmorphic-form h2 {
+  text-align: center;
+  color: #ded2d2;
+  margin-bottom: 10px;
+  font-weight: bold; 
+}
+
+.table{
+  margin-left: 2px;
+  border-radius: 15px;
+}
+
+.glassmorphic-form td {
+  text-align: center;
+  color: #070101;
+  margin-bottom: 10px;
+  font-weight: bold;
+  padding: 2px;
+}
+
+.glassmorphic-form form {
+  display: flex;
+  padding: 15px;
+  flex-direction: column;
+}
+
+.glassmorphic-form input {
+  padding: 15px;
+  width: 250px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 80px;  
+  border: none;
+  background: rgba(255, 255, 255, 0.018);
+  color: #0c0707;
+  font-weight: bold;
+  box-shadow: 0 4px 15px 0 rgba(255, 255, 255, 0.201);
+  border-radius:10px;
+}
+
+.glassmorphic-form input:hover{
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.886);
+  border: none;
+  }
+
+.glassmorphic-form input:focus {
+  outline: invert;
+}
+.glassmorphic-form button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 0 4px 15px 0 rgba(255, 255, 255, 0.193);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.glassmorphic-form button:hover {
+  transform: translateY(6px);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.772);
+}
+
+input[type=file]::file-selector-button {
+  margin-right: 20px;
+  border: none;
+  background: #03060c;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background .2s ease-in-out;
+}
+
+input[type=file]::file-selector-button:hover {
+  background: rgba(36, 41, 110, 0.638);
+}
+
+input[type=submit] {
+  background-color: rgba(22, 20, 17, 0.943);
+  border: none;
+  border-radius: 15px;
+  color: white;
+  padding: 20px 20px;
+  margin: 20px 20px;
+  cursor: pointer;
+}
+input:hover[type=submit] {
+      background-color: rgba(36, 41, 110, 0.399);
+}
+
+@media screen and (max-width: 768px) {
+  .glassmorphic-form {
+    max-width: 90%;
+  }
+}
