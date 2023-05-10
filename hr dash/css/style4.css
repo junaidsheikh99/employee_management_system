@@ -1,0 +1,105 @@
+
+  ::placeholder{
+    color: #070101;
+  }
+    
+  .empad{
+    margin:0 auto;
+    max-width: 840px;
+    padding: 10px;
+    padding-top: 10px;
+    background: #000000;
+    box-shadow: 0 8px 32px 0 rgba(50, 38, 156, 0.874);
+    border-radius: 20px;
+    border: 1px solid rgba(31, 17, 163, 0.935);
+    
+  }
+  table{
+    margin: 0 auto;
+    border-color: #000000;
+    border: bold;
+  }
+  
+  .empad h2 {
+    text-align: center;
+    color: #ded2d2;
+    margin-bottom: 10px;
+    font-weight: bold;
+    
+  }
+  
+  .empad form {
+    display: flex;
+    padding: 8px;
+    margin:0 auto;
+    flex-direction: column;
+  }
+  
+  .empad input{
+    padding-top:9px;
+    padding-left: 1px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-right:40px;
+    padding-bottom: 5px;
+    border: none;
+    background: rgba(255, 255, 255, 0.041);
+    color: #0c0707; 
+    background: rgba( 255, 255, 255, 0.25 );
+    font-weight: bold;
+    backdrop-filter: blur(4px);
+  }
+
+.empad input:hover{
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.886);
+}
+  
+  .empad input:focus {
+    outline: invert;
+  }
+  .empad button {
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .empad button:hover {
+    transform: translateY(6px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.772);
+  }
+
+  input[type=file]::file-selector-button {
+    border:#000000;
+    background: #03060c;
+    margin-left:8px;
+    color: #fff;
+    cursor: pointer;
+    transition: background .1s ease-in-out;
+  }
+  
+  input[type=file]::file-selector-button:hover {
+    background: rgba(36, 41, 110, 0.399);
+  }
+  
+  input[type=submit] {
+    background-color: rgb(22, 20, 17);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    cursor: pointer;
+ }
+ input:hover[type=submit] {
+        background-color: rgba(36, 41, 110, 0.399);
+        
+ }
+ @media screen and (max-width: 768px) {
+    .empad {
+      max-width: 90%;
+    }
+  }
+  

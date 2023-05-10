@@ -1,0 +1,35 @@
+.exp[type=number], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+#experience-years {
+        display: none;
+      }
+
+/* Insert icon */
+/* Insert icon */
+.insert-icon::before {
+  content: "\f055";
+  font-family: "Font Awesome 5 Free";
+}
+
+/* Update icon */
+.update-icon::before {
+  content: "\f044";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  font-style: normal;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+/* Delete icon */
+.delete-icon::before {
+  content: "\f1f8";
+  font-family: "Font Awesome 5 Free";
+}

@@ -1,0 +1,27 @@
+.admintitle{
+      background-color:rgba(33,36,41,256);
+      color: #f9cd5e;
+      height: 120px;
+      line-height: 120px;
+     
+      
+   }
+   
+   body {
+           background-color: rgba(33,36,41,255);
+           background-repeat: no-repeat;
+           background-attachment: fixed;
+           background-size: cover;
+         }
+        
+   a:link    { color: rgb(240, 234, 234); text-decoration: none; }
+   a:visited { color: rgb(240, 234, 234); ; text-decoration: none; }
+   a:hover   { color: rgb(240, 234, 234); ; text-decoration: none; }
+   a:active  { color: rgb(240, 234, 234); ; text-decoration: none; }
+   
+   
+   .h2{
+           text-decoration-color: aqua;
+   }
+   
+   

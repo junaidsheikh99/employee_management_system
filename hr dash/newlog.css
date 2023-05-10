@@ -1,0 +1,47 @@
+/* Icon container styles */
+.icon-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Icon styles */
+  .icon {
+    margin: 0 20px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .icon.active {
+    opacity: 1;
+  }
+  
+  .icon i {
+    font-size: 48px;
+  }
+  
+  /* Form styles */
+  .form {
+    display: none;
+  }
+  
+  .form.active {
+    display: block;
+  }
+  
+  .form h2 {
+    text-align: center;
+  }
+  
+  .form label {
+    display: block;
+  }
+  
+  .form input[type="text"],
+  .form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1
+  }  
